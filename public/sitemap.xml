@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://loginwashere.pp.ua/blog/2011/11/24/simple-static-blog-using-octopress/</loc>
+        <lastmod>2011-11-24T00:27:03+03:00</lastmod>
+    </url>
+    <url>
         <loc>http://loginwashere.pp.ua/</loc>
-        <lastmod>2011-11-23T23:25:15+03:00</lastmod>
+        <lastmod>2011-11-24T00:27:03+03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://loginwashere.pp.ua/about/</loc>
+        <lastmod>2011-11-24T00:40:13+03:00</lastmod>
     </url>
     <url>
         <loc>http://loginwashere.pp.ua/blog/archives/</loc>
-        <lastmod>2011-11-23T23:25:15+03:00</lastmod>
+        <lastmod>2011-11-24T00:27:03+03:00</lastmod>
     </url>
 </urlset>
