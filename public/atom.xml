@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Don't panic]]></title>
-  <link href="http://loginwashere.pp.ua/atom.xml" rel="self"/>
-  <link href="http://loginwashere.pp.ua/"/>
-  <updated>2011-11-24T00:42:46+03:00</updated>
-  <id>http://loginwashere.pp.ua/</id>
+  <title><![CDATA[Dmitriy Savchenko]]></title>
+  <link href="http://loginwashere.github.com/atom.xml" rel="self"/>
+  <link href="http://loginwashere.github.com/"/>
+  <updated>2011-12-25T14:23:56+03:00</updated>
+  <id>http://loginwashere.github.com/</id>
   <author>
     <name><![CDATA[Dmitriy Savchenko]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Simple static blog using Octopress]]></title>
-    <link href="http://loginwashere.pp.ua/blog/2011/11/24/simple-static-blog-using-octopress/"/>
+    <link href="http://loginwashere.github.com/blog/2011/11/24/simple-static-blog-using-octopress/"/>
     <updated>2011-11-24T00:27:00+03:00</updated>
-    <id>http://loginwashere.pp.ua/blog/2011/11/24/simple-static-blog-using-octopress</id>
+    <id>http://loginwashere.github.com/blog/2011/11/24/simple-static-blog-using-octopress</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
