@@ -5,12 +5,12 @@ date: 2011-11-24 00:27
 comments: true
 categories: 
 ---
-{% img left http://placekitten.com/320/250 Image tag test %}
+{% img http://i.imgur.com/NGE2a.png Image tag %}
 
 Comes to end year of owning my first hosting. I win it in New Year contest from Logol on habrahabr.ru.
 Nice hosting, but paying even small amount of money for the thing you use one or two times a month
 (games twitter and work take almost all my time) is inpractical.
-
+<!-- more -->
 About half a year ago i've discovered posibility of hosting site on github. Some time latter i tryed heroku - so paying
 money for something you can get free - no way.
 

@@ -4,11 +4,17 @@
         <loc>
             http://loginwashere.github.com/blog/2011/11/24/simple-static-blog-using-octopress/
         </loc>
-        <lastmod>2011-12-25T21:44:15+03:00</lastmod>
+        <lastmod>2011-12-31T06:14:09+03:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/
+        </loc>
+        <lastmod>2011-12-31T06:01:48+03:00</lastmod>
     </url>
     <url>
         <loc>http://loginwashere.github.com/</loc>
-        <lastmod>2011-12-25T21:44:15+03:00</lastmod>
+        <lastmod>2011-12-31T06:14:09+03:00</lastmod>
     </url>
     <url>
         <loc>http://loginwashere.github.com/about/</loc>
@@ -16,6 +22,6 @@
     </url>
     <url>
         <loc>http://loginwashere.github.com/blog/archives/</loc>
-        <lastmod>2011-12-25T21:44:15+03:00</lastmod>
+        <lastmod>2011-12-31T06:14:09+03:00</lastmod>
     </url>
 </urlset>
