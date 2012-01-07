@@ -2,7 +2,7 @@
 layout: post
 title: "Moving server to Virtual box or wildcard virtual domains"
 date: 2012-01-01 00:15
-published: true
+published: false
 comments: true
 categories:
 - ubuntu
