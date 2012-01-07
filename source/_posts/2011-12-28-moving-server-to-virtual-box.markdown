@@ -1,58 +1,60 @@
 ---
 layout: post
-title: "Moving server to Virtual box"
-date: 2011-12-28 00:15
-published: false
+title: "Moving server to Virtual box or wildcard virtual domains"
+date: 2012-01-01 00:15
+published: true
 comments: true
 categories:
 - ubuntu
 - VirtualBox
 ---
-{% img http://placekitten.com/890/280 %}
+{% img http://i.imgur.com/nAByQ.png %}
 
-При разработке на PHP уже привык для любого, даже мелкого проекта заводить виртуальный хост.
-Учитывая то, что разработка ведется в Ubuntu, создание нового виртуального хоста для проета происходит довольно быстро.
+Currently i work with LAMP stack and therefore i'm used to creating virtual hosts for all projects, even small ones.
+Assuming that development is going on Ubuntu, Virtual Host creation is quite quick and easy operation.
+<!-- more -->
 ``` bash
-# Создаем публичную папку проекта
+# Create project public folder
 mkdir /home/%username%/vhosts/%sitename%
 
-# Создаем файл который будет содержать описание виртуального хоста
+# Create file, that will be containing virtual Host description
 #
-# В Ubuntu описание виртуальных хостов удобно хранить
-# в папке /etc/apache2/sites-available/
-# по виртуальному хосту в файле
-sudo vi /etc/apache2/sites-available/%sitename%
+# In Ubuntu Virtual Host descriptions are stored in folder
+# /etc/apache2/sites-available/ one host per file
 
-# ВНИМАНИЕ:
-# Если вам по каким-либо причинам не нравиться vi
-# файл можно создать и редактировать любыми доступными средствами
-#
-# Если вы случайно запустили vi и не знаете как выйти - наберите :q и нажмите <Enter>
-# В открывшемся редакторе необходимо добавить запись описывающую виртуальный хост. Например так:
+sudo vi /etc/apache2/sites-available/%sitename%
+```
+ATTENTION:
+If you don't like vi, vim or whatever
+you can create and edit file with any editor you like.
+
+If you started vi and don't know how to exit press <Esc> and then type :q and press <Enter>
+```
+# Add record describing Virtual Host
 <VirtualHost *:80>
     ServerName %sitename%
     ServerAlias %sitename%
     DocumentRoot /home/lwh/vhosts/%sitename%
 </VirtualHost&gt
 
-# (Вместо создания можно скопировать файл по умолчанию и отредактировать его)
+# (Instead of creating you can copy default file and then edit it)
 # sudo cp /etc/apache2/sites-avalable/default /etc/apache2/sites-available/%sitename%
 
-# "Включаем сайт"
-# Создается ссылка /etc/apache2/sites-enabled/%sitename%
-# на ранее созданный /etc/apache2/sites-available/%sitename%
+# "Enabling site"
+# Create link from /etc/apache2/sites-available/%sitename%
+# to /etc/apache2/sites-enabled/%sitename%
 sudo a2ensite %sitename%
 
-# Перезапускаем apache чтобы измения вступили в силу
+# To apply changes reload or reboot apache with a command
 sudo service apache reload
 
-# В открывшемся редакторе необходимо добавить запись вида
+# Add sitename ofyoursite to hosts file
 # 127.0.0.1 %sitename%
 sudo vi /etc/hosts
 ```
-Всего пять комманд и к сайту можно обратиться по адресу http://%sitename%.
-Как же упростить этот процесс?
-<!-- more -->
+Just five commands and you can access site on http://%sitename%.
+But this proccess can be simplified.
+
 Вроде бы ничего сложного, но когда создаешь н-адцатый проект, начинаешь задумываться об автоматизации и еще большем
 упрощении процедуры. Можно создать скрипт, который сведет все к запуску скрипта и вводу названия проекта,
 дополнительный параметров.
@@ -62,6 +64,7 @@ sudo vi /etc/hosts
 Так как компьютер у меня один, то для отделния сервера решил использовать Virtual Box.
 Установив на виртуальную машину Ubuntu Server столкнулся с задачей доступа к виртуальным хостам виртуальной машины.
 При поиске решения наткнулся на замечательную программу dnsmasq – простой в использовании и настройкt DNS и DHCP сервер.
+
 Следует отметить, что сеть на виртуально машине у меня настроена так: NAT (Network Address Translation) для
 доступа в интернет для всяких обновлений и установок новых пакетов (При этом подключении нет доступа из хоста к гостю)
 и виртуальный адаптер хоста (Host-only Adapter) для обеспечения связи между хостом и гостем.
@@ -69,35 +72,36 @@ sudo vi /etc/hosts
 Затем, при запустке виртуальной машины на хосте создался адаптер с названием vboxnet0 в Ubuntu и
 VirtualBox Host-Only Network в Windows. Это довольно неприятная особенность Virtual Box мешает легкому
 использованию одной виртуальной машины на разных хостах если одним из адаперов является виртуальный адаптер хоста.
-Также отличается ip адрес этого адаптера по умолчанию (В Windows назначается 192.168.137.1, в то время как в Ubuntu 192.168.56.1). С чем связаны эти различия я не знаю, но нужно иметь их ввиду.
+Также отличается ip адрес этого адаптера по умолчанию (В Windows назначается 192.168.137.1, в то время как в Ubuntu 192.168.56.1).
+С чем связаны эти различия я не знаю, но нужно иметь их ввиду.
 Для хоста я выбрал ip 192.168.137.1, для гостя – 192.168.137.3.
 
 На госте NAT адаптер получает настройки сети автоматически и работает сразу из каробки.
 Добавить адаптер для виртуального адаптера хоста на гость можно добавив настройки в файл /etc/network/interfaces
 ```
-# eth0 - дефолтный интерфейс, используется для NAT
-# поэтому для этого интерфейса выбрал название eth1
-# Если у вас уже присутствует такой интерфейс - выберите другое название.
+# eth0 - default unterface, used for NAT
+# therefore for new interface i choose name eth1
+# If you already have interface with that name - choose another name.
 auto eth1
 iface eth1 inet static
-# ip адрес гостя
+# guest ip
 address 192.168.137.3
-# ip адрес хоста
+# host ip
 gateway 192.168.137.1
 netmask 255.255.255.0
 ```
-Если хотите применить введенные выше настройки необходимо запустить команду
+If you want apply these settings you need to execute command
 ```
 sudo /etc/init.d/networking restart
 ```
-Устанавливаем на виртуальную машину dnsmasq
+Install dnsmasq on virtual mashine
 ```
 sudo apt-get install dnsmasq
 ```
 и получаем DNS сервер, который будет обрабатывать запросы к виртуальной машине и отдавать виртуальные хосты.
 По этой ссылке можно посмотреть настройки программы, их описание и некоторые примеры.
 
-Из них нас в первыю очередь интересуют.
+Among them we are interested in next settings:
 ```
 # ip адрес - это ip адрес гостя
 # Первый параметр посылает все запросы к *.site.local на 192.168.137.3
@@ -107,43 +111,48 @@ listen-address=192.168.137.3
 ```
 Их нужно раскомментировать и заменить ip адрес на адрес виртуальной машины(192.168.137.3), и выбрать название для домена,
 на котором у вас будут находиться локальные проекты(site.local).
+
 Чтобы воспользоваться DNS сервером необходимо проинформировать о его существовании виртуальную машину.
 Для этого на госте откроем файл
+Open file on guest mashine
 ```
 sudo vi /etc/resolv.conf
 ```
-и добавим запись о сервере
+and add record about server
 ```
-# Эту строчку следует разместить в самом начале файла
+# This line should be placed in the beggining of file.
 nameserver 192.168.137.3
 ```
-Также нужно добавить запись о новом DNS сервере на хосте
+Also you need to add new DNS server record on host
+
+
 Теперь возмемся за apache. Для облегчения создания виртуальных хостов воспользуемся его модулем mod_vhost_alias.
 Этот модуль позволит создавать виртуальный хост простым созданием директории. Включить его можно следующей командой
 ```
 sudo a2enmod vhost_alias
 ```
-Создадим виртуальный хост, поддоменами которого будут наши проекты.
+Create Virtual Host. Your projects will be accessible on it's subdomains.
 ```
 sudo vi /etc/apache2/sites-available/site.local
-# В этот файл добавим примерно следующее
+# Add next lines to this file
 <VirtualHost *:80>
     ServerName site.local
     ServerAlias *.site.local
     VirtualDocumentRoot /home/%username%/vhosts/%1
 </VirtualHost&gt
-# Не забываем перезапустить apache чтобы измения вступили в силу
+# Do not forget to reload or restsrt apache
 sudo service apache reload
 ```
-Теперь проверим – все ли работает
+Lets check if everything works.
 ```
 mkdir /home/%username%/vhosts/test
 echo <h1>Hello Virtual Host</h1> > /home/%username%/vhosts/test/index.php
 ```
-Теперь если в браузере обратиться по адресу http://test.site.local можно увидеть надпись Hello Virtual Host. Если это так – можно вздохнуть с облегчением – все прошло успешно.
+Now you can open in browser page http://test.site.local and see text: "Hello Virtual Host".
+Congratulations - you've made your life a bit easier.
 
-Литература
+Links
 
-    * Описание настроек dnsmasq(на английском)
+    * dnsmasq settings explained
     * Мультидоменность в Apache без лишних хлопот на локальном хосте
     * http://httpd.apache.org/docs/2.0/mod/mod_vhost_alias.html
