@@ -6,11 +6,12 @@
 <head>
   <meta charset="utf-8">
   <meta name='yandex-verification' content='5ea72ac393c6b7c7' />
-  <title>Category: PHP - Dmitriy Savchenko</title>
+  <title>Tip: ssh-copy-id alternative - Dmitriy Savchenko</title>
   <meta name="author" content="Dmitriy Savchenko">
 
   
-  <meta name="description" content="Category: PHP">
+  <meta name="description" content="This one snippet also start to appear in my search results more often. 1
+cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 " &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://loginwashere.github.comblog/categories/php">
+  <link rel="canonical" href="http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -75,36 +76,114 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: PHP</h1>
+    
+      <h1 class="entry-title">Tip: Ssh-copy-id Alternative</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-30T00:32:00+03:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>This one snippet also start to appear in my search results more often.</p>
 
-  
-  <h2>2011</h2>
-
-<article>
-  
-<h1><a href="/blog/2011/12/31/start-playing-with-zend-framework-2/">Start playing with Zend Framework 2</a></h1>
-<time datetime="2011-12-31T05:08:00+02:00" pubdate><span class='month'>Dec</span> <span class='day'>31</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/php/'>PHP</a>, <a class='category' href='/blog/categories/zend-framework/'>Zend Framework</a></span>
-</footer>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 "mkdir ~/.ssh; cat &gt;&gt; ~/.ssh/authorized_keys"
+</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<p>The key part of this one liner is:</p>
 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-o PubkeyAuthentication=no</span></code></pre></td></tr></table></div></figure>
+
+
+<p> You can&#8217;t specify it for ssh-copy-id and without it you get this error</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ Received disconnect from host: 2: Too many authentication failures for user</span></code></pre></td></tr></table></div></figure>
+
+
+<p> Also other solutions can be found <a href="http://superuser.com/questions/187779/too-many-authentication-failures-for-username">here</a></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Dmitriy Savchenko</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-30T00:32:00+03:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dev/'>dev</a>, <a class='category' href='/blog/categories/ssh/'>ssh</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/" data-via="loginwashere" data-counturl="http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/09/30/tip-delete-git-remote-tag/" title="Previous Post: Tip: Delete git remote tag">&laquo; Tip: Delete git remote tag</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -214,7 +293,10 @@
       var disqus_shortname = 'dontpanic42';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/';
+        var disqus_url = 'http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -4,7 +4,7 @@
   <title><![CDATA[Dmitriy Savchenko]]></title>
   <link href="http://loginwashere.github.com/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
-  <updated>2014-09-30T00:27:01+03:00</updated>
+  <updated>2014-09-30T00:45:23+03:00</updated>
   <id>http://loginwashere.github.com/</id>
   <author>
     <name><![CDATA[Dmitriy Savchenko]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tip: ssh-copy-id alternative]]></title>
+    <link href="http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/"/>
+    <updated>2014-09-30T00:32:00+03:00</updated>
+    <id>http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative</id>
+    <content type="html"><![CDATA[<p>This one snippet also start to appear in my search results more often.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 "mkdir ~/.ssh; cat &gt;&gt; ~/.ssh/authorized_keys"
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The key part of this one liner is:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-o PubkeyAuthentication=no</span></code></pre></td></tr></table></div></figure>
+
+
+<p> You can&#8217;t specify it for ssh-copy-id and without it you get this error</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ Received disconnect from host: 2: Too many authentication failures for user</span></code></pre></td></tr></table></div></figure>
+
+
+<p> Also other solutions can be found <a href="http://superuser.com/questions/187779/too-many-authentication-failures-for-username">here</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tip: Delete git remote tag]]></title>

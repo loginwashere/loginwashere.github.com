@@ -10,7 +10,8 @@
   <meta name="author" content="Dmitriy Savchenko">
 
   
-  <meta name="description" content="For a quite long period of time I&#8217;ve been using this method to delete remote tag in git repository: Find myself in a situation when you totally &hellip;">
+  <meta name="description" content="This one snippet also start to appear in my search results more often. 1
+cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 " &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +77,61 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/30/tip-ssh-copy-id-alternative/">Tip: Ssh-copy-id Alternative</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-30T00:32:00+03:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This one snippet also start to appear in my search results more often.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 "mkdir ~/.ssh; cat &gt;&gt; ~/.ssh/authorized_keys"
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The key part of this one liner is:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-o PubkeyAuthentication=no</span></code></pre></td></tr></table></div></figure>
+
+
+<p> You can&#8217;t specify it for ssh-copy-id and without it you get this error</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ Received disconnect from host: 2: Too many authentication failures for user</span></code></pre></td></tr></table></div></figure>
+
+
+<p> Also other solutions can be found <a href="http://superuser.com/questions/187779/too-many-authentication-failures-for-username">here</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -276,6 +332,10 @@ Nice hosting, but paying even small amount of money for the thing you use one or
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/09/30/tip-ssh-copy-id-alternative/">Tip: ssh-copy-id alternative</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/09/30/tip-delete-git-remote-tag/">Tip: Delete git remote tag</a>
