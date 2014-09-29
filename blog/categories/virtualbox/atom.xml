@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: VirtualBox | Dmitriy Savchenko]]></title>
+  <link href="http://loginwashere.github.com/blog/categories/virtualbox/atom.xml" rel="self"/>
+  <link href="http://loginwashere.github.com/"/>
+  <updated>2014-09-30T00:27:01+03:00</updated>
+  <id>http://loginwashere.github.com/</id>
+  <author>
+    <name><![CDATA[Dmitriy Savchenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[VirtualBox guest additions reinstall]]></title>
+    <link href="http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall/"/>
+    <updated>2012-01-07T22:47:00+02:00</updated>
+    <id>http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall</id>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/GubLdl.jpg"></p>
+
+<p>Software development obviously needs some environment. After some time spent working as developer i've got strong filling,
+that this envirement should be separated from my desktop. At least vitrually.</p>
+
+<!-- more -->
+
+
+<p>So i am working with server inside VirtalBox. It's preaty hendy solution, but lack of exirience can couse some troubles.</p>
+
+<p>For example i have computer with Windows7/Ubuntu 11.10 in dual boot and i really would like to work with
+the same virtual mashine from each of the two operating systems. At the time of this writing i didn't manage to achieve
+this useful functionality, so i keep using Windows more heavily than i want (Thanks Skyrim, shame on me).</p>
+
+<p>Just today i tryed to use ubuntu server virtual mashine, configured to use with windows and encoutered some problems.</p>
+
+<p>So handy advise if you want to use virtual mashine in different operating systes:</p>
+
+<ol>
+<li><p>Don't forget to remove VBoxAdditions disk after additions intallation.
+Paths in ubuntu and windows to that disk are equally not acceptable.</p></li>
+<li><p>If you, like me, use two adapters to connect virtual mashine to internet (NAT) and to host (Hast only Network) you
+probably would be surprized to know, VirtualBox have different names for second one in linux and windows. And, yes,
+these names are incompatible too. So after OS chnge you shold go to VM settings and open window with Host only netwoerk
+settings. After that name will be change to propper for current OS. (Why have they done this?)</p></li>
+</ol>
+
+
+<p>After that if you have network properly set up - you shouldn't fill any differece. All work like clock.</p>
+]]></content>
+  </entry>
+  
+</feed>

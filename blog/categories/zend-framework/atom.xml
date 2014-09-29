@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Zend Framework | Dmitriy Savchenko]]></title>
+  <link href="http://loginwashere.github.com/blog/categories/zend-framework/atom.xml" rel="self"/>
+  <link href="http://loginwashere.github.com/"/>
+  <updated>2014-09-30T00:27:01+03:00</updated>
+  <id>http://loginwashere.github.com/</id>
+  <author>
+    <name><![CDATA[Dmitriy Savchenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Start playing with Zend Framework 2]]></title>
+    <link href="http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/"/>
+    <updated>2011-12-31T05:08:00+02:00</updated>
+    <id>http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2</id>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/Nlro8.png"></p>
+
+<p>New version of framework comes with great deal of changes and still is in beta, but definetly worth looking at.</p>
+
+<!-- more -->
+
+
+<p>Some of the biggest chenges are:</p>
+
+<pre><code>- framework start using namespases
+- redused number of singletons in project
+- framework heavily rely on Dependency Injection(DI) and Dependency Injection Container(DIC)
+</code></pre>
+
+<p>To explain this concept there is <a href="http://framework.zend.com/wiki/display/ZFDEV2/Zend+DI+QuickStart">tutorial</a></p>
+
+<p><a href="http://packages.zendframework.com/">packages.zendframework.com</a> is great place to start. There you can in
+various ways download and install framework. Also it has usefull links to api, blog and wiki.</p>
+
+<p><a href="http://akrabat.com/zend-framework/updated-tutorial-for-zend-framework-2-beta-1/">Rob Allen's (Akrabat) tutorial</a> has been updated
+to support first beta of framework. In this tutorial you can create simple catalog app using Zend Framework 2.</p>
+
+<p>Also there you can find link to <a href="https://github.com/zendframework/ZendSkeletonApplication">ZendSkeletonApplication</a> and
+way to get application and frameworn in one simple git clone.</p>
+]]></content>
+  </entry>
+  
+</feed>

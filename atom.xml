@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Dmitriy Savchenko]]></title>
+  <link href="http://loginwashere.github.com/atom.xml" rel="self"/>
+  <link href="http://loginwashere.github.com/"/>
+  <updated>2014-09-30T00:27:01+03:00</updated>
+  <id>http://loginwashere.github.com/</id>
+  <author>
+    <name><![CDATA[Dmitriy Savchenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tip: Delete git remote tag]]></title>
+    <link href="http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag/"/>
+    <updated>2014-09-30T00:12:00+03:00</updated>
+    <id>http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag</id>
+    <content type="html"><![CDATA[<p>For a quite long period of time I&#8217;ve been using this method to delete remote tag in git repository:</p>
+
+<ul>
+<li>Find myself in a situation when you totally need to remove that pushed tag</li>
+<li>Feel frustrated, because even after doing this more than 10 times I still fail to remember the command</li>
+<li>Google the command</li>
+<li>Click on that purple link - first in search results for &#8220;git delete remote tag&#8221;</li>
+<li>Look at the command and feel embarrassed again</li>
+<li>Copy paste the command to the terminal window.</li>
+</ul>
+
+
+<p>Today  must admit that I have the problem and the first step to overcome it - add link to solution to this blog:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git tag -d 12345
+</span><span class='line'>git push origin :refs/tags/12345</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="http://nathanhoad.net/how-to-delete-a-remote-git-tag">source</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[VirtualBox guest additions reinstall]]></title>
+    <link href="http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall/"/>
+    <updated>2012-01-07T22:47:00+02:00</updated>
+    <id>http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall</id>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/GubLdl.jpg"></p>
+
+<p>Software development obviously needs some environment. After some time spent working as developer i&#8217;ve got strong filling,
+that this envirement should be separated from my desktop. At least vitrually.</p>
+
+<!-- more -->
+
+
+<p>So i am working with server inside VirtalBox. It&#8217;s preaty hendy solution, but lack of exirience can couse some troubles.</p>
+
+<p>For example i have computer with Windows7/Ubuntu 11.10 in dual boot and i really would like to work with
+the same virtual mashine from each of the two operating systems. At the time of this writing i didn&#8217;t manage to achieve
+this useful functionality, so i keep using Windows more heavily than i want (Thanks Skyrim, shame on me).</p>
+
+<p>Just today i tryed to use ubuntu server virtual mashine, configured to use with windows and encoutered some problems.</p>
+
+<p>So handy advise if you want to use virtual mashine in different operating systes:</p>
+
+<ol>
+<li><p>Don&#8217;t forget to remove VBoxAdditions disk after additions intallation.
+Paths in ubuntu and windows to that disk are equally not acceptable.</p></li>
+<li><p>If you, like me, use two adapters to connect virtual mashine to internet (NAT) and to host (Hast only Network) you
+probably would be surprized to know, VirtualBox have different names for second one in linux and windows. And, yes,
+these names are incompatible too. So after OS chnge you shold go to VM settings and open window with Host only netwoerk
+settings. After that name will be change to propper for current OS. (Why have they done this?)</p></li>
+</ol>
+
+
+<p>After that if you have network properly set up - you shouldn&#8217;t fill any differece. All work like clock.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Start playing with Zend Framework 2]]></title>
+    <link href="http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/"/>
+    <updated>2011-12-31T05:08:00+02:00</updated>
+    <id>http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2</id>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/Nlro8.png"></p>
+
+<p>New version of framework comes with great deal of changes and still is in beta, but definetly worth looking at.</p>
+
+<!-- more -->
+
+
+<p>Some of the biggest chenges are:</p>
+
+<pre><code>- framework start using namespases
+- redused number of singletons in project
+- framework heavily rely on Dependency Injection(DI) and Dependency Injection Container(DIC)
+</code></pre>
+
+<p>To explain this concept there is <a href="http://framework.zend.com/wiki/display/ZFDEV2/Zend+DI+QuickStart">tutorial</a></p>
+
+<p><a href="http://packages.zendframework.com/">packages.zendframework.com</a> is great place to start. There you can in
+various ways download and install framework. Also it has usefull links to api, blog and wiki.</p>
+
+<p><a href="http://akrabat.com/zend-framework/updated-tutorial-for-zend-framework-2-beta-1/">Rob Allen&#8217;s (Akrabat) tutorial</a> has been updated
+to support first beta of framework. In this tutorial you can create simple catalog app using Zend Framework 2.</p>
+
+<p>Also there you can find link to <a href="https://github.com/zendframework/ZendSkeletonApplication">ZendSkeletonApplication</a> and
+way to get application and frameworn in one simple git clone.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Simple static blog using Octopress]]></title>
+    <link href="http://loginwashere.github.com/blog/2011/11/24/simple-static-blog-using-octopress/"/>
+    <updated>2011-11-24T00:27:00+02:00</updated>
+    <id>http://loginwashere.github.com/blog/2011/11/24/simple-static-blog-using-octopress</id>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/NGE2a.png" title="Image tag" ></p>
+
+<p>Comes to end year of owning my first hosting. I win it in New Year contest from Logol on habrahabr.ru.
+Nice hosting, but paying even small amount of money for the thing you use one or two times a month
+(games twitter and work take almost all my time) is inpractical.</p>
+
+<!-- more -->
+
+
+<p>About half a year ago i&#8217;ve discovered posibility of hosting site on github. Some time latter i tryed heroku - so paying
+money for something you can get free - no way.</p>
+
+<p>And at last i&#8217;ve found time to transfer my almost empty wordpress blog to octopress and host it on github. Choosing heroku you
+can get private repository for your blog or whatever you what to host there. But it wasn&#8217;t critical for me so here i am on github.</p>
+
+<p>Site is completely static now - just a bunch of html pages generated by Jakyll. And still it has:</p>
+
+<pre><code>* comments thanks to Disqus,
+* latest projects from github and tweets,
+* code highlight
+</code></pre>
+
+<p>What else do i realy need?</p>
+]]></content>
+  </entry>
+  
+</feed>

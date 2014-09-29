@@ -6,11 +6,12 @@
 <head>
   <meta charset="utf-8">
   <meta name='yandex-verification' content='5ea72ac393c6b7c7' />
-  <title>Dmitriy Savchenko</title>
+  <title>VirtualBox guest additions reinstall - Dmitriy Savchenko</title>
   <meta name="author" content="Dmitriy Savchenko">
 
   
-  <meta name="description" content="For a quite long period of time I&#8217;ve been using this method to delete remote tag in git repository: Find myself in a situation when you totally &hellip;">
+  <meta name="description" content="Software development obviously needs some environment. After some time spent working as developer i&#8217;ve got strong filling,
+that this &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://loginwashere.github.com">
+  <link rel="canonical" href="http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -74,71 +75,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/09/30/tip-delete-git-remote-tag/">Tip: Delete Git Remote Tag</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-09-30T00:12:00+03:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>For a quite long period of time I&#8217;ve been using this method to delete remote tag in git repository:</p>
-
-<ul>
-<li>Find myself in a situation when you totally need to remove that pushed tag</li>
-<li>Feel frustrated, because even after doing this more than 10 times I still fail to remember the command</li>
-<li>Google the command</li>
-<li>Click on that purple link - first in search results for &#8220;git delete remote tag&#8221;</li>
-<li>Look at the command and feel embarrassed again</li>
-<li>Copy paste the command to the terminal window.</li>
-</ul>
-
-
-<p>Today  must admit that I have the problem and the first step to overcome it - add link to solution to this blog:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git tag -d 12345
-</span><span class='line'>git push origin :refs/tags/12345</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="http://nathanhoad.net/how-to-delete-a-remote-git-tag">source</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/07/virtualbox-guest-additions-reinstall/">VirtualBox Guest Additions Reinstall</a></h1>
+      <h1 class="entry-title">VirtualBox Guest Additions Reinstall</h1>
     
     
       <p class="meta">
@@ -161,75 +103,46 @@
   </header>
 
 
-  <div class="entry-content"><p><img src="http://i.imgur.com/GubLdl.jpg"></p>
+<div class="entry-content"><p><img src="http://i.imgur.com/GubLdl.jpg"></p>
 
 <p>Software development obviously needs some environment. After some time spent working as developer i&#8217;ve got strong filling,
 that this envirement should be separated from my desktop. At least vitrually.</p>
 
+<!-- more -->
+
+
+<p>So i am working with server inside VirtalBox. It&#8217;s preaty hendy solution, but lack of exirience can couse some troubles.</p>
+
+<p>For example i have computer with Windows7/Ubuntu 11.10 in dual boot and i really would like to work with
+the same virtual mashine from each of the two operating systems. At the time of this writing i didn&#8217;t manage to achieve
+this useful functionality, so i keep using Windows more heavily than i want (Thanks Skyrim, shame on me).</p>
+
+<p>Just today i tryed to use ubuntu server virtual mashine, configured to use with windows and encoutered some problems.</p>
+
+<p>So handy advise if you want to use virtual mashine in different operating systes:</p>
+
+<ol>
+<li><p>Don&#8217;t forget to remove VBoxAdditions disk after additions intallation.
+Paths in ubuntu and windows to that disk are equally not acceptable.</p></li>
+<li><p>If you, like me, use two adapters to connect virtual mashine to internet (NAT) and to host (Hast only Network) you
+probably would be surprized to know, VirtualBox have different names for second one in linux and windows. And, yes,
+these names are incompatible too. So after OS chnge you shold go to VM settings and open window with Host only netwoerk
+settings. After that name will be change to propper for current OS. (Why have they done this?)</p></li>
+</ol>
+
+
+<p>After that if you have network properly set up - you shouldn&#8217;t fill any differece. All work like clock.</p>
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/01/07/virtualbox-guest-additions-reinstall/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/31/start-playing-with-zend-framework-2/">Start Playing With Zend Framework 2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Dmitriy Savchenko</span></span>
 
-<time datetime="2011-12-31T05:08:00+02:00" pubdate data-updated="true">Dec 31<span>st</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://i.imgur.com/Nlro8.png"></p>
-
-<p>New version of framework comes with great deal of changes and still is in beta, but definetly worth looking at.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/12/31/start-playing-with-zend-framework-2/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/24/simple-static-blog-using-octopress/">Simple Static Blog Using Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -241,36 +154,50 @@ that this envirement should be separated from my desktop. At least vitrually.</p
   
 
 
-<time datetime="2011-11-24T00:27:00+02:00" pubdate data-updated="true">Nov 24<span>th</span>, 2011</time>
-        
-      </p>
+<time datetime="2012-01-07T22:47:00+02:00" pubdate data-updated="true">Jan 7<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/virtualbox/'>VirtualBox</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall/" data-via="loginwashere" data-counturl="http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/12/31/start-playing-with-zend-framework-2/" title="Previous Post: Start playing with Zend Framework 2">&laquo; Start playing with Zend Framework 2</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/09/30/tip-delete-git-remote-tag/" title="next Post: Tip: Delete git remote tag">Tip: Delete git remote tag &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
-  <div class="entry-content"><p><img src="http://i.imgur.com/NGE2a.png" title="Image tag" ></p>
-
-<p>Comes to end year of owning my first hosting. I win it in New Year contest from Logol on habrahabr.ru.
-Nice hosting, but paying even small amount of money for the thing you use one or two times a month
-(games twitter and work take almost all my time) is inpractical.</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/11/24/simple-static-blog-using-octopress/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -299,7 +226,7 @@ Nice hosting, but paying even small amount of money for the thing you use one or
 <section>
   <h1>Github Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/loginwashere">@loginwashere</a> on Github
@@ -329,7 +256,7 @@ Nice hosting, but paying even small amount of money for the thing you use one or
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -358,6 +285,7 @@ Nice hosting, but paying even small amount of money for the thing you use one or
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -372,7 +300,10 @@ Nice hosting, but paying even small amount of money for the thing you use one or
       var disqus_shortname = 'dontpanic42';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall/';
+        var disqus_url = 'http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
