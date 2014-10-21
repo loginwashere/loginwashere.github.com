@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name='yandex-verification' content='5ea72ac393c6b7c7' />
-  <title>Dmitriy Savchenko</title>
+  <title>symbol 'grub_term_highlight_color' not found - Dmitriy Savchenko</title>
   <meta name="author" content="Dmitriy Savchenko">
 
   
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://loginwashere.github.com">
+  <link rel="canonical" href="http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -74,15 +74,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/">Symbol &#8216;Grub_term_highlight_color&#8217; Not Found</a></h1>
+      <h1 class="entry-title">Symbol 'Grub_term_highlight_color' Not Found</h1>
     
     
       <p class="meta">
@@ -105,7 +102,7 @@
   </header>
 
 
-  <div class="entry-content"><p>Those lines from title wasn&#8217;t exactly expected to appear after ubuntu 14.04 update.</p>
+<div class="entry-content"><p>Those lines from title wasn&#8217;t exactly expected to appear after ubuntu 14.04 update.</p>
 
 <p>It all started kinda from the wrong foot when I decided to finally update my home dual boot setup - ubuntu 13.04/win7.</p>
 
@@ -159,77 +156,16 @@ After some time I found this <a href="http://askubuntu.com/questions/449818/cant
 <p>When tool starts it is quite easy to understand what to do (I selected recommended repair)
 After some time it said that all done and I was able to load both new ubuntu and good old win7.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/30/tip-ssh-copy-id-alternative/">Tip: Ssh-copy-id Alternative</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Dmitriy Savchenko</span></span>
 
-<time datetime="2014-09-30T00:32:00+03:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This one snippet also start to appear in my search results more often.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 "mkdir ~/.ssh; cat &gt;&gt; ~/.ssh/authorized_keys"
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The key part of this one liner is:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-o PubkeyAuthentication=no</span></code></pre></td></tr></table></div></figure>
-
-
-<p> You can&#8217;t specify it for ssh-copy-id and without it you get this error</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ Received disconnect from host: 2: Too many authentication failures for user</span></code></pre></td></tr></table></div></figure>
-
-
-<p> Also other solutions can be found <a href="http://superuser.com/questions/187779/too-many-authentication-failures-for-username">here</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/30/tip-delete-git-remote-tag/">Tip: Delete Git Remote Tag</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -241,179 +177,48 @@ After some time it said that all done and I was able to load both new ubuntu and
   
 
 
-<time datetime="2014-09-30T00:12:00+03:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>For a quite long period of time I&#8217;ve been using this method to delete remote tag in git repository:</p>
-
-<ul>
-<li>Find myself in a situation when you totally need to remove that pushed tag</li>
-<li>Feel frustrated, because even after doing this more than 10 times I still fail to remember the command</li>
-<li>Google the command</li>
-<li>Click on that purple link - first in search results for &#8220;git delete remote tag&#8221;</li>
-<li>Look at the command and feel embarrassed again</li>
-<li>Copy paste the command to the terminal window.</li>
-</ul>
-
-
-<p>Today  must admit that I have the problem and the first step to overcome it - add link to solution to this blog:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git tag -d 12345
-</span><span class='line'>git push origin :refs/tags/12345</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="http://nathanhoad.net/how-to-delete-a-remote-git-tag">source</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2014-10-21T22:42:00+03:00" pubdate data-updated="true">Oct 21<span>st</span>, 2014</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/07/virtualbox-guest-additions-reinstall/">VirtualBox Guest Additions Reinstall</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a>
+  
+</span>
 
 
-<time datetime="2012-01-07T22:47:00+02:00" pubdate data-updated="true">Jan 7<span>th</span>, 2012</time>
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://i.imgur.com/GubLdl.jpg"></p>
-
-<p>Software development obviously needs some environment. After some time spent working as developer i&#8217;ve got strong filling,
-that this envirement should be separated from my desktop. At least vitrually.</p>
-
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/" data-via="loginwashere" data-counturl="http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/01/07/virtualbox-guest-additions-reinstall/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/31/start-playing-with-zend-framework-2/">Start Playing With Zend Framework 2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-31T05:08:00+02:00" pubdate data-updated="true">Dec 31<span>st</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://i.imgur.com/Nlro8.png"></p>
-
-<p>New version of framework comes with great deal of changes and still is in beta, but definetly worth looking at.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/12/31/start-playing-with-zend-framework-2/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment left" href="/blog/2014/09/30/tip-ssh-copy-id-alternative/" title="Previous Post: Tip: ssh-copy-id alternative">&laquo; Tip: ssh-copy-id alternative</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/24/simple-static-blog-using-octopress/">Simple Static Blog Using Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
+      
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-24T00:27:00+02:00" pubdate data-updated="true">Nov 24<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://i.imgur.com/NGE2a.png" title="Image tag" ></p>
-
-<p>Comes to end year of owning my first hosting. I win it in New Year contest from Logol on habrahabr.ru.
-Nice hosting, but paying even small amount of money for the thing you use one or two times a month
-(games twitter and work take almost all my time) is inpractical.</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/11/24/simple-static-blog-using-octopress/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -421,7 +226,7 @@ Nice hosting, but paying even small amount of money for the thing you use one or
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/">symbol &#8216;grub_term_highlight_color&#8217; not found</a>
+        <a href="/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/">symbol 'grub_term_highlight_color' not found</a>
       </li>
     
       <li class="post">
@@ -446,7 +251,7 @@ Nice hosting, but paying even small amount of money for the thing you use one or
 <section>
   <h1>Github Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/loginwashere">@loginwashere</a> on Github
@@ -476,7 +281,7 @@ Nice hosting, but paying even small amount of money for the thing you use one or
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -505,6 +310,7 @@ Nice hosting, but paying even small amount of money for the thing you use one or
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -519,7 +325,10 @@ Nice hosting, but paying even small amount of money for the thing you use one or
       var disqus_shortname = 'dontpanic42';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/';
+        var disqus_url = 'http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

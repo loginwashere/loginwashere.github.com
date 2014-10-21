@@ -4,7 +4,7 @@
   <title><![CDATA[Dmitriy Savchenko]]></title>
   <link href="http://loginwashere.github.com/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
-  <updated>2014-09-30T00:45:23+03:00</updated>
+  <updated>2014-10-21T23:15:46+03:00</updated>
   <id>http://loginwashere.github.com/</id>
   <author>
     <name><![CDATA[Dmitriy Savchenko]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[symbol 'grub_term_highlight_color' not found]]></title>
+    <link href="http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/"/>
+    <updated>2014-10-21T22:42:00+03:00</updated>
+    <id>http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found</id>
+    <content type="html"><![CDATA[<p>Those lines from title wasn&#8217;t exactly expected to appear after ubuntu 14.04 update.</p>
+
+<p>It all started kinda from the wrong foot when I decided to finally update my home dual boot setup - ubuntu 13.04/win7.</p>
+
+<p>During the update from 13.04 to 13.10 (it isn&#8217;t possible to update from 13.04 to 14.04 - you need to go through all steps)
+Dropbox failed to update and I noticed this only when I got home from work in the evening. Day wasted.</p>
+
+<p>But I decided that it wasn&#8217;t a big deal and I simply cancelled distro upgrade.
+After reboot I noticed that I already have 13.10. That&#8217;s cool I thought andmoved to upgrade to 14.04 after removing Dropbox.
+All went fine and in the end I clicked Reboot now in the modal window.</p>
+
+<p>And that is when I faced black screen with error from title. To make colors darker - I even couldn&#8217;t get to bios when I pressed reboot like 10 times.
+Strange behaviour. But then I switched computer off and on and was able to get to bios. Hooray.</p>
+
+<p>Hopefully I have notebook and I was able to google solution for this inconvenience.
+As it always happens first solution is to wipe all drives clean and reinstall everything.</p>
+
+<p>No way I said and kept searching.
+After some time I found this <a href="http://askubuntu.com/questions/449818/cant-find-boot-repair-package-for-the-newest-version-of-ubuntu">link</a> which helped me to solve my problem.</p>
+
+<p>Basically all you need is:</p>
+
+<ul>
+<li>to create boot cd (wait what?) or flash stick</li>
+<li>boot from it</li>
+<li>select &#8220;Try ubuntu&#8221; option (I assume you created ubuntu boot cd/usb)</li>
+<li>install boot-repair</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:yannubuntu/boot-repair
+</span><span class='line'>sudo sh -c "sed -i 's/trusty/saucy/g' /etc/apt/sources.list.d/yannubuntu-boot-repair-trusty.list"
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get install -y boot-repair && (boot-repair &)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As you can see this helpful tool isn&#8217;t available for 14.04 and you need to switch it&#8217;s sources to previous ubuntu version.</p>
+
+<ul>
+<li>run</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo boot-repair</span></code></pre></td></tr></table></div></figure>
+
+
+<p>When tool starts it is quite easy to understand what to do (I selected recommended repair)
+After some time it said that all done and I was able to load both new ubuntu and good old win7.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tip: ssh-copy-id alternative]]></title>
