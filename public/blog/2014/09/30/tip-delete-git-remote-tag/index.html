@@ -6,11 +6,11 @@
 <head>
   <meta charset="utf-8">
   <meta name='yandex-verification' content='5ea72ac393c6b7c7' />
-  <title>Start playing with Zend Framework 2 - Dmitriy Savchenko</title>
+  <title>Tip: Delete git remote tag - Dmitriy Savchenko</title>
   <meta name="author" content="Dmitriy Savchenko">
 
   
-  <meta name="description" content="New version of framework comes with great deal of changes and still is in beta, but definetly worth looking at. Some of the biggest chenges are: - &hellip;">
+  <meta name="description" content="For a quite long period of time I&#8217;ve been using this method to delete remote tag in git repository: Find myself in a situation when you totally &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2">
+  <link rel="canonical" href="http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -79,7 +79,7 @@
   
   <header>
     
-      <h1 class="entry-title">Start Playing With Zend Framework 2</h1>
+      <h1 class="entry-title">Tip: Delete Git Remote Tag</h1>
     
     
       <p class="meta">
@@ -95,37 +95,34 @@
   
 
 
-<time datetime="2011-12-31T05:08:00+02:00" pubdate data-updated="true">Dec 31<span>st</span>, 2011</time>
+<time datetime="2014-09-30T00:12:00+03:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img src="http://i.imgur.com/Nlro8.png"></p>
+<div class="entry-content"><p>For a quite long period of time I&#8217;ve been using this method to delete remote tag in git repository:</p>
 
-<p>New version of framework comes with great deal of changes and still is in beta, but definetly worth looking at.</p>
+<ul>
+<li>Find myself in a situation when you totally need to remove that pushed tag</li>
+<li>Feel frustrated, because even after doing this more than 10 times I still fail to remember the command</li>
+<li>Google the command</li>
+<li>Click on that purple link - first in search results for &#8220;git delete remote tag&#8221;</li>
+<li>Look at the command and feel embarrassed again</li>
+<li>Copy paste the command to the terminal window.</li>
+</ul>
 
-<!-- more -->
+
+<p>Today  must admit that I have the problem and the first step to overcome it - add link to solution to this blog:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git tag -d 12345
+</span><span class='line'>git push origin :refs/tags/12345</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Some of the biggest chenges are:</p>
-
-<pre><code>- framework start using namespases
-- redused number of singletons in project
-- framework heavily rely on Dependency Injection(DI) and Dependency Injection Container(DIC)
-</code></pre>
-
-<p>To explain this concept there is <a href="http://framework.zend.com/wiki/display/ZFDEV2/Zend+DI+QuickStart">tutorial</a></p>
-
-<p><a href="http://packages.zendframework.com/">packages.zendframework.com</a> is great place to start. There you can in
-various ways download and install framework. Also it has usefull links to api, blog and wiki.</p>
-
-<p><a href="http://akrabat.com/zend-framework/updated-tutorial-for-zend-framework-2-beta-1/">Rob Allen&#8217;s (Akrabat) tutorial</a> has been updated
-to support first beta of framework. In this tutorial you can create simple catalog app using Zend Framework 2.</p>
-
-<p>Also there you can find link to <a href="https://github.com/zendframework/ZendSkeletonApplication">ZendSkeletonApplication</a> and
-way to get application and frameworn in one simple git clone.</p>
+<p><a href="http://nathanhoad.net/how-to-delete-a-remote-git-tag">source</a></p>
 </div>
 
 
@@ -148,12 +145,12 @@ way to get application and frameworn in one simple git clone.</p>
   
 
 
-<time datetime="2011-12-31T05:08:00+02:00" pubdate data-updated="true">Dec 31<span>st</span>, 2011</time>
+<time datetime="2014-09-30T00:12:00+03:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/php/'>PHP</a>, <a class='category' href='/blog/categories/zend-framework/'>Zend Framework</a>
+    <a class='category' href='/blog/categories/dev/'>dev</a>, <a class='category' href='/blog/categories/git/'>git</a>
   
 </span>
 
@@ -162,7 +159,7 @@ way to get application and frameworn in one simple git clone.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/" data-via="loginwashere" data-counturl="http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag/" data-via="loginwashere" data-counturl="http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -175,10 +172,10 @@ way to get application and frameworn in one simple git clone.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2011/11/24/simple-static-blog-using-octopress/" title="Previous Post: Simple static blog using Octopress">&laquo; Simple static blog using Octopress</a>
+        <a class="basic-alignment left" href="/blog/2012/01/07/virtualbox-guest-additions-reinstall/" title="Previous Post: VirtualBox guest additions reinstall">&laquo; VirtualBox guest additions reinstall</a>
       
       
-        <a class="basic-alignment right" href="/blog/2012/01/07/virtualbox-guest-additions-reinstall/" title="next Post: VirtualBox guest additions reinstall">VirtualBox guest additions reinstall &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/09/30/tip-ssh-copy-id-alternative/" title="next Post: Tip: ssh-copy-id alternative">Tip: ssh-copy-id alternative &raquo;</a>
       
     </p>
   </footer>
@@ -299,8 +296,8 @@ way to get application and frameworn in one simple git clone.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/';
-        var disqus_url = 'http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/';
+        var disqus_identifier = 'http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag/';
+        var disqus_url = 'http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dev | Dmitriy Savchenko]]></title>
+  <link href="http://loginwashere.github.com/blog/categories/dev/atom.xml" rel="self"/>
+  <link href="http://loginwashere.github.com/"/>
+  <updated>2014-10-21T23:15:46+03:00</updated>
+  <id>http://loginwashere.github.com/</id>
+  <author>
+    <name><![CDATA[Dmitriy Savchenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tip: ssh-copy-id alternative]]></title>
+    <link href="http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/"/>
+    <updated>2014-09-30T00:32:00+03:00</updated>
+    <id>http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative</id>
+    <content type="html"><![CDATA[<p>This one snippet also start to appear in my search results more often.</p>
+
+<p>```
+cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 "mkdir ~/.ssh; cat >> ~/.ssh/authorized_keys"</p>
+
+<p>```</p>
+
+<p>The key part of this one liner is:</p>
+
+<p><code>
+-o PubkeyAuthentication=no
+</code></p>
+
+<p> You can't specify it for ssh-copy-id and without it you get this error</p>
+
+<p><code>
+$ Received disconnect from host: 2: Too many authentication failures for user
+</code></p>
+
+<p> Also other solutions can be found <a href="http://superuser.com/questions/187779/too-many-authentication-failures-for-username">here</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tip: Delete git remote tag]]></title>
+    <link href="http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag/"/>
+    <updated>2014-09-30T00:12:00+03:00</updated>
+    <id>http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag</id>
+    <content type="html"><![CDATA[<p>For a quite long period of time I've been using this method to delete remote tag in git repository:</p>
+
+<ul>
+<li>Find myself in a situation when you totally need to remove that pushed tag</li>
+<li>Feel frustrated, because even after doing this more than 10 times I still fail to remember the command</li>
+<li>Google the command</li>
+<li>Click on that purple link - first in search results for "git delete remote tag"</li>
+<li>Look at the command and feel embarrassed again</li>
+<li>Copy paste the command to the terminal window.</li>
+</ul>
+
+
+<p>Today  must admit that I have the problem and the first step to overcome it - add link to solution to this blog:</p>
+
+<p><code>
+git tag -d 12345
+git push origin :refs/tags/12345
+</code></p>
+
+<p><a href="http://nathanhoad.net/how-to-delete-a-remote-git-tag">source</a></p>
+]]></content>
+  </entry>
+  
+</feed>

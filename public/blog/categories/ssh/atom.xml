@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ssh | Dmitriy Savchenko]]></title>
+  <link href="http://loginwashere.github.com/blog/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://loginwashere.github.com/"/>
+  <updated>2014-10-21T23:15:46+03:00</updated>
+  <id>http://loginwashere.github.com/</id>
+  <author>
+    <name><![CDATA[Dmitriy Savchenko]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tip: ssh-copy-id alternative]]></title>
+    <link href="http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/"/>
+    <updated>2014-09-30T00:32:00+03:00</updated>
+    <id>http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative</id>
+    <content type="html"><![CDATA[<p>This one snippet also start to appear in my search results more often.</p>
+
+<p>```
+cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 "mkdir ~/.ssh; cat >> ~/.ssh/authorized_keys"</p>
+
+<p>```</p>
+
+<p>The key part of this one liner is:</p>
+
+<p><code>
+-o PubkeyAuthentication=no
+</code></p>
+
+<p> You can't specify it for ssh-copy-id and without it you get this error</p>
+
+<p><code>
+$ Received disconnect from host: 2: Too many authentication failures for user
+</code></p>
+
+<p> Also other solutions can be found <a href="http://superuser.com/questions/187779/too-many-authentication-failures-for-username">here</a></p>
+]]></content>
+  </entry>
+  
+</feed>
