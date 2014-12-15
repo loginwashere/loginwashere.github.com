@@ -33,8 +33,14 @@
         <lastmod>2014-10-21T23:13:55+03:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://loginwashere.github.com/blog/2014/12/15/tip-save-protected-document-openned-in-vim/
+        </loc>
+        <lastmod>2014-12-15T19:57:43+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://loginwashere.github.com/blog/archives/</loc>
-        <lastmod>2014-10-21T23:13:55+03:00</lastmod>
+        <lastmod>2014-12-15T19:57:43+02:00</lastmod>
     </url>
     <url>
         <loc>http://loginwashere.github.com/about/</loc>
@@ -42,6 +48,6 @@
     </url>
     <url>
         <loc>http://loginwashere.github.com/</loc>
-        <lastmod>2014-10-21T23:13:55+03:00</lastmod>
+        <lastmod>2014-12-15T19:57:43+02:00</lastmod>
     </url>
 </urlset>
