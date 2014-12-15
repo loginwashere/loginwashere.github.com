@@ -10,7 +10,10 @@
   <meta name="author" content="Dmitriy Savchenko">
 
   
-  <meta name="description" content="Those lines from title wasn&#8217;t exactly expected to appear after ubuntu 14.04 update. It all started kinda from the wrong foot when I decided to &hellip;">
+  <meta name="description" content="dev
+linux
+vim
+This one can save some time for you. How much? It depends on how often you use vim and what you do with it. Imagine you opened a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +79,68 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/12/15/tip-save-protected-document-openned-in-vim/">Tip: Save Document Opened in Vim Without Permissions</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-15T19:47:00+02:00" pubdate data-updated="true">Dec 15<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+<li>dev</li>
+<li>linux</li>
+<li>vim
+This one can save some time for you. How much? It depends on how often you use vim and what you do with it.</li>
+</ul>
+
+
+<p>Imagine you opened a document im vim and started making changes. Time goes by and you decide to save the document.
+And guess what - you do not have permissions to do this. You opened some config in /etc/something but you did this as regular user.</p>
+
+<p>At this point you have several ways to overcome this problem, but I only use this one lately.</p>
+
+<p>All you need is instead of typing</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>:w</span></code></pre></td></tr></table></div></figure>
+
+
+<p>to save document, type</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>:w sudo tee  %</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Well, I won&#8217;t pretend, at the moment I do not know what this command do exactly, but it helps.
+This way you can save document (if you know user password or user do not need one and if user can run sudo command)</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -421,6 +486,10 @@ Nice hosting, but paying even small amount of money for the thing you use one or
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/12/15/tip-save-protected-document-openned-in-vim/">Tip: Save document opened in vim without permissions</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/">symbol &#8216;grub_term_highlight_color&#8217; not found</a>
       </li>
     
@@ -434,10 +503,6 @@ Nice hosting, but paying even small amount of money for the thing you use one or
     
       <li class="post">
         <a href="/blog/2012/01/07/virtualbox-guest-additions-reinstall/">VirtualBox guest additions reinstall</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/12/31/start-playing-with-zend-framework-2/">Start playing with Zend Framework 2</a>
       </li>
     
   </ul>
