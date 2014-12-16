@@ -4,7 +4,7 @@
   <title><![CDATA[Dmitriy Savchenko]]></title>
   <link href="http://loginwashere.github.com/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
-  <updated>2014-12-15T20:01:40+02:00</updated>
+  <updated>2014-12-16T20:42:17+02:00</updated>
   <id>http://loginwashere.github.com/</id>
   <author>
     <name><![CDATA[Dmitriy Savchenko]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Zend PHP Certification]]></title>
+    <link href="http://loginwashere.github.com/blog/2014/12/15/zend-php-certification/"/>
+    <updated>2014-12-15T20:04:00+02:00</updated>
+    <id>http://loginwashere.github.com/blog/2014/12/15/zend-php-certification</id>
+    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/djvX5U9.gif"></p>
+
+<p>If you saw this film - <a href="http://www.imdb.com/title/tt0061722/">The Graduate</a>, you may remember something weird in that scene.</p>
+
+<p>At last. Wow it was cool. Yay yeah. Wait, now what?</p>
+
+<p>Happy pair enter the bus, they are laughing and shining with joy and then you notice something, as if they start to grasp
+what happened. I can&#8217;t say that I felt exactly the same, but it was close. Maybe both cases can be connected with the
+accomplishment of the goal, maybe something else, I&#8217;ll try to look closer and investigate this question, but not in this post.</p>
+
+<p>So, &#8220;Zend PHP Certification&#8221; - basic facts:</p>
+
+<ul>
+<li>70 questions: various difficulty</li>
+<li>90 minutes: you manage time, can skip questions, mark questions for future review</li>
+<li>three question types: one answer, multiple answers (number of right answers is specified) and one where you need to type answer (nothing long)</li>
+</ul>
+
+
+<p>Sources that helped me to prepare for certification:</p>
+
+<ul>
+<li><a href="http://php.net/manual/en/">php.net/manual/en/</a> - this is obvious</li>
+<li><a href="http://www.zend.com/en/services/certification/php-certification-study-guide">The Zend PHP Certification Study Guide</a> - this
+guide covers fast forward all topics of the certification and has samples of questions.</li>
+<li><a href="http://3v4l.org/">3v4l.org</a> - cool site which allow you to run php code against almost all versions of php</li>
+<li><a href="http://zend-php.appspot.com/questions_list">zend-php.appspot.com/questions_list</a> - list of questions that you may or may
+not see in test. Be cautious - check answers and read comments - not all questions solves in a right way. This may be confusing but also can be helpful.</li>
+<li><a href="http://www.slideshare.net/carlosbuenosvinos/zend-php-53-demo-certification-test">http://www.slideshare.net/carlosbuenosvinos/zend-php-53-demo-certification-test</a> - this
+presentation contains questions from if i&#8217;m not mistaken php 5.3 study guide and is quite old but also can be helpful.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tip: Save document opened in vim without permissions]]></title>
