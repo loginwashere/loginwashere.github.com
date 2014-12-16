@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: php | Dmitriy Savchenko]]></title>
-  <link href="http://loginwashere.github.com/blog/categories/php/atom.xml" rel="self"/>
+  <title><![CDATA[Category: zend | Dmitriy Savchenko]]></title>
+  <link href="http://loginwashere.github.com/blog/categories/zend/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
   <updated>2014-12-16T20:42:17+02:00</updated>
   <id>http://loginwashere.github.com/</id>
