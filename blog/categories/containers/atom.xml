@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: dev | Dmitriy Savchenko]]></title>
-  <link href="http://loginwashere.github.com/blog/categories/dev/atom.xml" rel="self"/>
+  <title><![CDATA[Category: containers | Dmitriy Savchenko]]></title>
+  <link href="http://loginwashere.github.com/blog/categories/containers/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
   <updated>2015-02-23T21:53:58+00:00</updated>
   <id>http://loginwashere.github.com/</id>
@@ -94,131 +94,6 @@ container contents with Dockerfile and you can commit and push containers to rep
 <li><a href="https://blog.jessfraz.com/posts/docker-containers-on-the-desktop.html">Running desktop apps in docker container</a></li>
 </ol>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Zend PHP Certification]]></title>
-    <link href="http://loginwashere.github.com/blog/2014/12/15/zend-php-certification/"/>
-    <updated>2014-12-15T20:04:00+00:00</updated>
-    <id>http://loginwashere.github.com/blog/2014/12/15/zend-php-certification</id>
-    <content type="html"><![CDATA[<p>{% img http://i.imgur.com/djvX5U9.gif %}</p>
-
-<p>If you saw this film - <a href="http://www.imdb.com/title/tt0061722/">The Graduate</a>, you may remember something weird in that scene.</p>
-
-<p>At last. Wow it was cool. Yay yeah. Wait, now what?</p>
-
-<p>Happy pair enter the bus, they are laughing and shining with joy and then you notice something, as if they start to grasp
-what happened. I can't say that I felt exactly the same, but it was close. Maybe both cases can be connected with the
-accomplishment of the goal, maybe something else, I'll try to look closer and investigate this question, but not in this post.</p>
-
-<p>So, "Zend PHP Certification" - basic facts:</p>
-
-<ul>
-<li>70 questions: various difficulty</li>
-<li>90 minutes: you manage time, can skip questions, mark questions for future review</li>
-<li>three question types: one answer, multiple answers (number of right answers is specified) and one where you need to type answer (nothing long)</li>
-</ul>
-
-
-<p>Sources that helped me to prepare for certification:</p>
-
-<ul>
-<li><a href="http://php.net/manual/en/">php.net/manual/en/</a> - this is obvious</li>
-<li><a href="http://www.zend.com/en/services/certification/php-certification-study-guide">The Zend PHP Certification Study Guide</a> - this
-guide covers fast forward all topics of the certification and has samples of questions.</li>
-<li><a href="http://3v4l.org/">3v4l.org</a> - cool site which allow you to run php code against almost all versions of php</li>
-<li><a href="http://zend-php.appspot.com/questions_list">zend-php.appspot.com/questions_list</a> - list of questions that you may or may
-not see in test. Be cautious - check answers and read comments - not all questions solves in a right way. This may be confusing but also can be helpful.</li>
-<li><a href="http://www.slideshare.net/carlosbuenosvinos/zend-php-53-demo-certification-test">http://www.slideshare.net/carlosbuenosvinos/zend-php-53-demo-certification-test</a> - this
-presentation contains questions from if i'm not mistaken php 5.3 study guide and is quite old but also can be helpful.</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tip: Save document opened in vim without permissions]]></title>
-    <link href="http://loginwashere.github.com/blog/2014/12/15/tip-save-protected-document-openned-in-vim/"/>
-    <updated>2014-12-15T19:47:00+00:00</updated>
-    <id>http://loginwashere.github.com/blog/2014/12/15/tip-save-protected-document-openned-in-vim</id>
-    <content type="html"><![CDATA[<p>This one can save some time for you. How much? It depends on how often you use vim and what you do with it.</p>
-
-<p>Imagine you opened a document im vim and started making changes. Time goes by and you decide to save the document.
-And guess what - you do not have permissions to do this. You opened some config in /etc/something but you did this as regular user.</p>
-
-<p>At this point you have several ways to overcome this problem, but I only use this one lately.</p>
-
-<p>All you need is instead of typing</p>
-
-<p><code>
-:w
-</code></p>
-
-<p>to save document, type</p>
-
-<p><code>
-:w sudo tee  %
-</code></p>
-
-<p>Well, I won't pretend, at the moment I do not know what this command do exactly, but it helps.
-This way you can save document (if you know user password or user do not need one and if user can run sudo command)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tip: ssh-copy-id alternative]]></title>
-    <link href="http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/"/>
-    <updated>2014-09-30T00:32:00+00:00</updated>
-    <id>http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative</id>
-    <content type="html"><![CDATA[<p>This one snippet also start to appear in my search results more often.</p>
-
-<p>```
-cat ~/.ssh/id_rsa.pub | ssh -o PubkeyAuthentication=no user@192.168.33.10 "mkdir ~/.ssh; cat >> ~/.ssh/authorized_keys"</p>
-
-<p>```</p>
-
-<p>The key part of this one liner is:</p>
-
-<p><code>
--o PubkeyAuthentication=no
-</code></p>
-
-<p> You can't specify it for ssh-copy-id and without it you get this error</p>
-
-<p><code>
-$ Received disconnect from host: 2: Too many authentication failures for user
-</code></p>
-
-<p> Also other solutions can be found <a href="http://superuser.com/questions/187779/too-many-authentication-failures-for-username">here</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tip: Delete git remote tag]]></title>
-    <link href="http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag/"/>
-    <updated>2014-09-30T00:12:00+00:00</updated>
-    <id>http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag</id>
-    <content type="html"><![CDATA[<p>For a quite long period of time I've been using this method to delete remote tag in git repository:</p>
-
-<ul>
-<li>Find myself in a situation when you totally need to remove that pushed tag</li>
-<li>Feel frustrated, because even after doing this more than 10 times I still fail to remember the command</li>
-<li>Google the command</li>
-<li>Click on that purple link - first in search results for "git delete remote tag"</li>
-<li>Look at the command and feel embarrassed again</li>
-<li>Copy paste the command to the terminal window.</li>
-</ul>
-
-
-<p>Today  must admit that I have the problem and the first step to overcome it - add link to solution to this blog:</p>
-
-<p><code>
-git tag -d 12345
-git push origin :refs/tags/12345
-</code></p>
-
-<p><a href="http://nathanhoad.net/how-to-delete-a-remote-git-tag">source</a></p>
 ]]></content>
   </entry>
   
