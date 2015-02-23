@@ -4,7 +4,7 @@
   <title><![CDATA[Category: zend | Dmitriy Savchenko]]></title>
   <link href="http://loginwashere.github.com/blog/categories/zend/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
-  <updated>2014-12-16T20:42:17+02:00</updated>
+  <updated>2015-02-23T19:41:17+00:00</updated>
   <id>http://loginwashere.github.com/</id>
   <author>
     <name><![CDATA[Dmitriy Savchenko]]></name>
@@ -16,9 +16,9 @@
   <entry>
     <title type="html"><![CDATA[Zend PHP Certification]]></title>
     <link href="http://loginwashere.github.com/blog/2014/12/15/zend-php-certification/"/>
-    <updated>2014-12-15T20:04:00+02:00</updated>
+    <updated>2014-12-15T20:04:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2014/12/15/zend-php-certification</id>
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/djvX5U9.gif"></p>
+    <content type="html"><![CDATA[<p>{% img http://i.imgur.com/djvX5U9.gif %}</p>
 
 <p>If you saw this film - <a href="http://www.imdb.com/title/tt0061722/">The Graduate</a>, you may remember something weird in that scene.</p>
 

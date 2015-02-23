@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ubuntu | Dmitriy Savchenko]]></title>
   <link href="http://loginwashere.github.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
-  <updated>2014-12-16T20:42:17+02:00</updated>
+  <updated>2015-02-23T19:41:17+00:00</updated>
   <id>http://loginwashere.github.com/</id>
   <author>
     <name><![CDATA[Dmitriy Savchenko]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[symbol 'grub_term_highlight_color' not found]]></title>
     <link href="http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/"/>
-    <updated>2014-10-21T22:42:00+03:00</updated>
+    <updated>2014-10-21T22:42:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found</id>
     <content type="html"><![CDATA[<p>Those lines from title wasn't exactly expected to appear after ubuntu 14.04 update.</p>
 

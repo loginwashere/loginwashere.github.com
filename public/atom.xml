@@ -4,7 +4,7 @@
   <title><![CDATA[Dmitriy Savchenko]]></title>
   <link href="http://loginwashere.github.com/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
-  <updated>2014-12-16T20:42:17+02:00</updated>
+  <updated>2015-02-23T19:40:57+00:00</updated>
   <id>http://loginwashere.github.com/</id>
   <author>
     <name><![CDATA[Dmitriy Savchenko]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Zend PHP Certification]]></title>
     <link href="http://loginwashere.github.com/blog/2014/12/15/zend-php-certification/"/>
-    <updated>2014-12-15T20:04:00+02:00</updated>
+    <updated>2014-12-15T20:04:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2014/12/15/zend-php-certification</id>
     <content type="html"><![CDATA[<p><img src="http://i.imgur.com/djvX5U9.gif"></p>
 
@@ -56,7 +56,7 @@ presentation contains questions from if i&#8217;m not mistaken php 5.3 study gui
   <entry>
     <title type="html"><![CDATA[Tip: Save document opened in vim without permissions]]></title>
     <link href="http://loginwashere.github.com/blog/2014/12/15/tip-save-protected-document-openned-in-vim/"/>
-    <updated>2014-12-15T19:47:00+02:00</updated>
+    <updated>2014-12-15T19:47:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2014/12/15/tip-save-protected-document-openned-in-vim</id>
     <content type="html"><![CDATA[<p>This one can save some time for you. How much? It depends on how often you use vim and what you do with it.</p>
 
@@ -85,7 +85,7 @@ This way you can save document (if you know user password or user do not need on
   <entry>
     <title type="html"><![CDATA[symbol 'grub_term_highlight_color' not found]]></title>
     <link href="http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found/"/>
-    <updated>2014-10-21T22:42:00+03:00</updated>
+    <updated>2014-10-21T22:42:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2014/10/21/symbol-grub-term-highlight-color-not-found</id>
     <content type="html"><![CDATA[<p>Those lines from title wasn&#8217;t exactly expected to appear after ubuntu 14.04 update.</p>
 
@@ -146,7 +146,7 @@ After some time it said that all done and I was able to load both new ubuntu and
   <entry>
     <title type="html"><![CDATA[Tip: ssh-copy-id alternative]]></title>
     <link href="http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative/"/>
-    <updated>2014-09-30T00:32:00+03:00</updated>
+    <updated>2014-09-30T00:32:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2014/09/30/tip-ssh-copy-id-alternative</id>
     <content type="html"><![CDATA[<p>This one snippet also start to appear in my search results more often.</p>
 
@@ -174,7 +174,7 @@ After some time it said that all done and I was able to load both new ubuntu and
   <entry>
     <title type="html"><![CDATA[Tip: Delete git remote tag]]></title>
     <link href="http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag/"/>
-    <updated>2014-09-30T00:12:00+03:00</updated>
+    <updated>2014-09-30T00:12:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2014/09/30/tip-delete-git-remote-tag</id>
     <content type="html"><![CDATA[<p>For a quite long period of time I&#8217;ve been using this method to delete remote tag in git repository:</p>
 
@@ -203,7 +203,7 @@ After some time it said that all done and I was able to load both new ubuntu and
   <entry>
     <title type="html"><![CDATA[VirtualBox guest additions reinstall]]></title>
     <link href="http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall/"/>
-    <updated>2012-01-07T22:47:00+02:00</updated>
+    <updated>2012-01-07T22:47:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2012/01/07/virtualbox-guest-additions-reinstall</id>
     <content type="html"><![CDATA[<p><img src="http://i.imgur.com/GubLdl.jpg"></p>
 
@@ -240,7 +240,7 @@ settings. After that name will be change to propper for current OS. (Why have th
   <entry>
     <title type="html"><![CDATA[Start playing with Zend Framework 2]]></title>
     <link href="http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/"/>
-    <updated>2011-12-31T05:08:00+02:00</updated>
+    <updated>2011-12-31T05:08:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2</id>
     <content type="html"><![CDATA[<p><img src="http://i.imgur.com/Nlro8.png"></p>
 
@@ -272,7 +272,7 @@ way to get application and frameworn in one simple git clone.</p>
   <entry>
     <title type="html"><![CDATA[Simple static blog using Octopress]]></title>
     <link href="http://loginwashere.github.com/blog/2011/11/24/simple-static-blog-using-octopress/"/>
-    <updated>2011-11-24T00:27:00+02:00</updated>
+    <updated>2011-11-24T00:27:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2011/11/24/simple-static-blog-using-octopress</id>
     <content type="html"><![CDATA[<p><img src="http://i.imgur.com/NGE2a.png" title="Image tag" ></p>
 
