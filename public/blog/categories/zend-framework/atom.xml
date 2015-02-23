@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Zend Framework | Dmitriy Savchenko]]></title>
   <link href="http://loginwashere.github.com/blog/categories/zend-framework/atom.xml" rel="self"/>
   <link href="http://loginwashere.github.com/"/>
-  <updated>2015-02-23T19:51:38+00:00</updated>
+  <updated>2015-02-23T21:53:58+00:00</updated>
   <id>http://loginwashere.github.com/</id>
   <author>
     <name><![CDATA[Dmitriy Savchenko]]></name>
@@ -18,7 +18,7 @@
     <link href="http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2/"/>
     <updated>2011-12-31T05:08:00+00:00</updated>
     <id>http://loginwashere.github.com/blog/2011/12/31/start-playing-with-zend-framework-2</id>
-    <content type="html"><![CDATA[<p><img src="http://i.imgur.com/Nlro8.png"></p>
+    <content type="html"><![CDATA[<p>{% img http://i.imgur.com/Nlro8.png %}</p>
 
 <p>New version of framework comes with great deal of changes and still is in beta, but definetly worth looking at.</p>
 
